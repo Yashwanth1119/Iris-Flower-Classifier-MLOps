@@ -50,8 +50,21 @@ json
 * Docker container
 * Ready for CI/CD and Deployment
 
-```bash
+##  What This Pipeline Does:
+* Runs on every push to main
+* Installs dependencies
+* Trains the model (train.py)
+* Evaluates it (evaluate.py)
+* Optionally hits the API with a test request
 
+
+## CI/CD Pipeline Output
+* Automatically installs dependencies
+* Trains the model
+* Evaluates the performance
+* Can be extended to deploy via Docker, AWS, or Render
+
+```bash
 ---
 
 ### ✅ To Host on GitHub
